@@ -33,5 +33,7 @@ dist-ssr
 # Scratch and temporary tools
 scratch/
 git_ops.py
+gh_login.py
+
 
 
