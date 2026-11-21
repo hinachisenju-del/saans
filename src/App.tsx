@@ -56,6 +56,9 @@ export function App() {
 
   useEffect(() => {
     trackEvent({ name: 'page_view', tab: activeTab });
+  }, [activeTab]);
+
+  useEffect(() => {
     const handleHash = () => {
       const hash = window.location.hash.replace('#', '');
       if (['today', 'plan', 'home', 'ask', 'community'].includes(hash)) {

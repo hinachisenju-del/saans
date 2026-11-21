@@ -1,29 +1,26 @@
 # Saans (साँस) — Hyperlocal Air Quality Assistant
 
-> Real-time air quality tracking and health advisory web application for Indian cities.
+Real-time air quality tracking, personalized health guidance, and physics-based indoor modeling for Indian urban centers.
 
-🔗 **Live Website Demo**: [https://empty-partition-anchor-basket.trycloudflare.com/](https://empty-partition-anchor-basket.trycloudflare.com/)
+Live Website Demo: https://empty-partition-anchor-basket.trycloudflare.com/
 
----
+## Testing
+Saans includes an automated test suite covering all calculation engines and safety features:
+- 43 automated unit tests passing across 7 test suites
+- Vitest and Happy-DOM integration
+- Run tests: `npm test`
 
-## Features
-- Real-time AQI and pollutant breakdown (PM2.5, PM10, NO2, SO2, CO, Ozone)
-- Actionable health recommendations for sensitive groups
-- Mask and air purifier guidance
-- Machine-readable structured metadata (`llms.txt` and Schema.org JSON-LD)
+## Architecture & Features
+- Simple Action Level (SAL) Engine (`src/engines/airQualityEngine.ts`): Translates raw NAQI breakpoints into 6 actionable categories.
+- Single-Room Mass Balance Engine (`src/engines/massBalanceEngine.ts`): Models air exchange, particle infiltration, and HEPA filtration.
+- Inhaled Dose Engine (`src/engines/inhaledDoseEngine.ts`): Calculates particulate lung deposition based on minute ventilation and mask type.
+- Clinical Red-Flag Safety Engine (`src/engines/safetyEngine.ts`): Bilingual detection of severe respiratory emergency symptoms.
+- Security and Sanitization (`src/utils/sanitize.ts`): HTML escaping and input filtering.
 
-## Tech Stack
-- React 19, TypeScript, Vite
-- Tailwind CSS
-- Cloudflare Workers integration
-
-## Running Locally
+## Setup & Running
 ```bash
 npm install
-npm run dev
-```
-
-## Production Build
-```bash
+npm test
+npm run lint
 npm run build
 ```
