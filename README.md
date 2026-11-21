@@ -2,7 +2,7 @@
 
 Real-time air quality tracking, personalized health guidance, and physics-based indoor modeling for Indian urban centers.
 
-Live Website Demo: https://limitations-neutral-attempts-equal.trycloudflare.com/
+Live Website Demo: https://4d154099b7ef3c.app.lhr.life/
 
 ## Testing
 Saans includes an automated test suite covering all calculation engines and safety features:
