@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Saans | सांस — Air Quality Advisory &amp; Action Feed</title>
+    <link>https://saans-domain-placeholder/</link>
+    <description>Real-time evidence-grounded air quality alerts, diurnal ventilation windows, and respiratory advisories for Delhi-NCR winter smog.</description>
+    <language>en-in</language>
+    <lastBuildDate>Sat, 21 Nov 2026 07:00:00 GMT</lastBuildDate>
+    <atom:link href="https://saans-domain-placeholder/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diurnal Ventilation Window Advisory: 1:00 PM – 3:00 PM</title>
+      <link>https://saans-domain-placeholder/#plan</link>
+      <guid>https://saans-domain-placeholder/#ventilation-window-20261121</guid>
+      <pubDate>Sat, 21 Nov 2026 06:30:00 GMT</pubDate>
+      <description>Nocturnal temperature inversion lid is forecast to break around 1:00 PM today as solar heating destabilizes the surface layer. Recommended 15-20 minute cross-ventilation window reduces particulate influx by up to 45% compared to morning airing.</description>
+    </item>
+    <item>
+      <title>Protocol: Clean One Room Well for Bedroom Smog Protection</title>
+      <link>https://saans-domain-placeholder/#plan</link>
+      <guid>https://saans-domain-placeholder/#clean-room-protocol</guid>
+      <pubDate>Fri, 20 Nov 2026 18:00:00 GMT</pubDate>
+      <description>Step-by-step guidance on door bottom sealing and HEPA pre-purge to achieve sub-35 µg/m³ nocturnal bedroom air during severe GRAP Stage IV conditions.</description>
+    </item>
+    <item>
+      <title>Respiratory Protection: Certified N95 Sealed Nose Bridge vs Cloth Masks</title>
+      <link>https://saans-domain-placeholder/#faq</link>
+      <guid>https://saans-domain-placeholder/#mask-fit-guidance</guid>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Comparative filtration analysis: why cloth bandanas and loose surgical masks fail to protect against PM2.5, and how to verify an airtight respirator seal.</description>
+    </item>
+  </channel>
+</rss>

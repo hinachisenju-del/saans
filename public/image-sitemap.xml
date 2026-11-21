@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://saans-domain-placeholder/</loc>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/hero-showcase.webp</image:loc>
+      <image:title>Saans Air Quality Action Protocol Hero Infographic</image:title>
+      <image:caption>Evidence-grounded aerosol mechanics and decision rules for Delhi winter smog</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/clean-room-diagram.webp</image:loc>
+      <image:title>Clean One Room Well Bedroom Sealing Protocol Diagram</image:title>
+      <image:caption>Visual schematic of floor gap sealing and HEPA pre-purge airflow</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/ventilation-window-diagram.webp</image:loc>
+      <image:title>Diurnal Solar Ventilation Inversion Curve Infographic</image:title>
+      <image:caption>Solar thermal boundary layer lifting curve between 1:00 PM and 3:00 PM</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/mask-fit-diagram.webp</image:loc>
+      <image:title>Respiratory Protection Mask Filtration Fit Comparison</image:title>
+      <image:caption>N95 sealed respirator vs surgical and cloth masks particulate efficiency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/og-image.webp</image:loc>
+      <image:title>Saans Air Quality Assistant Dashboard</image:title>
+      <image:caption>Evidence-grounded air quality guidance for Delhi-NCR winter smog</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/favicon.webp</image:loc>
+      <image:title>Saans Air Quality Assistant Logo</image:title>
+      <image:caption>Saans brand mark</image:caption>
+    </image:image>
+  </url>
+</urlset>

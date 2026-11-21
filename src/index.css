@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFD8CD;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5BCAC;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1A1D20;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2C3238;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3A424B;
+}
+
+/* Atmospheric Particle Animation */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-8px) translateX(4px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-16px) translateX(-2px);
+    opacity: 0;
+  }
+}
+
+.particle-dust {
+  animation: particleFloat 4s infinite ease-in-out;
+}
+
+/* Concentric Purifier Clean Air Waves */
+@keyframes cleanRipple {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.purifier-wave {
+  animation: cleanRipple 2.2s cubic-bezier(0.1, 0.5, 0.1, 1) infinite;
+}
+
+/* Audio Wave Equalizer Delays */
+.wave-bar-1 { animation-delay: 0.0s; }
+.wave-bar-2 { animation-delay: 0.2s; }
+.wave-bar-3 { animation-delay: 0.4s; }
+.wave-bar-4 { animation-delay: 0.1s; }
+.wave-bar-5 { animation-delay: 0.3s; }
+.wave-bar-6 { animation-delay: 0.5s; }
+
+/* Staggered Screen Entrances */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.12s; }
+.stagger-3 { animation-delay: 0.20s; }
+.stagger-4 { animation-delay: 0.28s; }
+
+/* Micro-interaction buttons */
+.interactive-tap:active {
+  transform: scale(0.97);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

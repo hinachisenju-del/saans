@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://saans-domain-placeholder/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/og-image.webp</image:loc>
+      <image:title>Saans Air Quality Assistant Dashboard</image:title>
+      <image:caption>Evidence-grounded air quality guidance for Delhi-NCR winter smog</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://saans-domain-placeholder/favicon.webp</image:loc>
+      <image:title>Saans Air Quality Assistant Icon</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/llms.txt</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#plan</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#home</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#ask</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#community</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#pricing</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://saans-domain-placeholder/#faq</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

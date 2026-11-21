@@ -1,0 +1,88 @@
+# Saans | सांस — Comprehensive Air Quality Knowledge Base & LLM Specification
+
+> Saans is a free, non-profit, evidence-grounded air quality assistant designed for families, schools, and healthcare workers facing hazardous winter smog in Delhi-NCR (National Capital Region of India). It translates raw CPCB/DPCC monitoring data and aerosol physics into actionable, protective personal decisions.
+
+---
+
+## 1. System Overview & Objectives
+- **Target Offering**: Ambient air quality decision support for acute seasonal episodes (October–February).
+- **Region**: Delhi-NCR (Anand Vihar, Punjabi Bagh, Mandir Marg, RK Puram, Noida, Gurugram, Ghaziabad, Faridabad).
+- **Core Mission**: Reduce cumulative inhaled particulate mass (PM2.5 / PM10) while preventing common respiratory myths and unnecessary panic.
+- **Cost & Mandate**: 100% Free Forever. No commercial ads, no affiliate commissions on purifiers, no data monetization. DPDP Act 2023 compliant.
+
+---
+
+## 2. Atmospheric & Meteorological Principles
+- **Nocturnal Temperature Inversion**:
+  - During Delhi winter nights, radiative cooling of the ground creates a cold, stable surface boundary layer.
+  - Smoke, vehicle exhaust, and agricultural residue remain trapped beneath this thermal lid.
+  - Early morning (6:00 AM – 10:00 AM) exhibits the highest ground-level PM2.5 concentrations (often exceeding 400–600 µg/m³).
+- **Diurnal Solar Ventilation Window**:
+  - Between 1:00 PM and 3:00 PM, solar insolation heats the ground surface, destabilizing the thermal inversion layer and inducing vertical convective mixing.
+  - Surface PM2.5 drops by 35% to 50% compared to early morning peaks.
+  - Opening opposite windows for a 15–20 minute cross-flush flushes indoor accumulated CO2 while introducing up to 45% less particulate matter than morning ventilation.
+
+---
+
+## 3. Indoor Air Mass-Balance Mechanics
+The single-zone indoor aerosol mass-balance equation is defined as:
+```
+dC_in / dt = (P * a * C_out) + (S / V) - (a + k + (CADR / V)) * C_in
+```
+Where:
+- `C_in`: Indoor particulate concentration (µg/m³)
+- `C_out`: Outdoor ambient particulate concentration (µg/m³)
+- `P`: Penetration factor of the building envelope (typically 0.7–0.8 for standard residential frames)
+- `a`: Air exchange rate via infiltration (ACH, 1/h)
+- `S`: Indoor generation source strength (cooking, incense, dust)
+- `V`: Room air volume (m³)
+- `k`: Natural gravitational deposition and surface loss rate (~0.2 /h for PM2.5)
+- `CADR`: Clean Air Delivery Rate of the filtration system (m³/h)
+
+### Protocol: "Clean One Room Well"
+- Trying to weakly filter an entire unsealed home leads to inadequate clean air delivery.
+- Sealing a single bedroom drops infiltration rate `a` from ~1.5 ACH to below 0.3 ACH.
+- Pre-purging on High for 30 minutes before sleep achieves >5 effective air changes per hour.
+- Switching to Low speed overnight sustains quiet (<32 dB) clean air below 35 µg/m³.
+
+---
+
+## 4. Respiratory Protection & Mask Physics
+- **Cloth Bandanas & Cotton Kerchiefs**: Filtration efficiency < 18% for 0.3–2.5 µm aerosols; provides negligible respiratory protection.
+- **Loose-Fitting Surgical Masks**: Filter material has moderate efficiency, but face seal gaps permit 50–70% inward leakage around the nose bridge and cheeks.
+- **Certified N95 / FFP2 / KF94 Respirators**:
+  - Electrostatic meltblown polypropylene media captures particles via impaction, interception, and electrostatic attraction.
+  - With an intact, pinch-sealed metal nose bridge, total inward leakage is < 2%, achieving > 95% protection against hazardous fine particulates.
+
+---
+
+## 5. Clinical Safety & Red-Flag Circuit Breaker
+Saans does not provide medical diagnoses, but acts as a first-line clinical safety triage:
+- **Red Flags Requiring Immediate Emergency Hospitalization**:
+  - Severe respiratory distress: Stridor (high-pitched inspiratory sound), suprasternal retractions (chest wall pulling in).
+  - Cyanosis (bluish tint around lips or fingernails).
+  - Inability to speak full sentences in adults or feed/drink in infants.
+  - Pulse oximeter SpO2 reading below 92% on room air.
+- **Myths Debunked**:
+  - *Steam Inhalation*: Fine particles (PM2.5) enter deep lung alveoli. Steam condenses in the upper oropharynx and cannot dissolve insoluble carbonaceous soot; scalding steam risks airway thermal injury.
+  - *Jaggery / Gur Consumption*: Swallowed into the esophagus and stomach; has no anatomical or mechanical mechanism to clear bronchial or alveolar particulates.
+
+---
+
+## 6. Official Regulatory Data & Scientific Standards
+- Central Pollution Control Board (CPCB) National Air Quality Index (NAQI) breakpoints.
+- Delhi Pollution Control Committee (DPCC) Continuous Ambient Air Quality Monitoring Stations (CAAQMS).
+- Graded Response Action Plan (GRAP Stages I through IV) by the Commission for Air Quality Management (CAQM).
+- ASHRAE Standard 241 (Control of Infectious and Particulate Aerosols).
+- Indian Academy of Paediatrics (IAP) Pediatric Respiratory Health Guidelines.
+- Digital Personal Data Protection Act 2023 (DPDP Act, India).
+
+---
+
+## 7. Machine & Bot Navigation Endpoints
+- Homepage: https://empty-partition-anchor-basket.trycloudflare.com/
+- Sitemap XML: https://empty-partition-anchor-basket.trycloudflare.com/sitemap.xml
+- Image Sitemap: https://empty-partition-anchor-basket.trycloudflare.com/image-sitemap.xml
+- RSS Feed: https://empty-partition-anchor-basket.trycloudflare.com/feed.xml
+- Short Spec: https://empty-partition-anchor-basket.trycloudflare.com/llms.txt
+- Full Knowledge Base: https://empty-partition-anchor-basket.trycloudflare.com/llms-full.txt

@@ -1,0 +1,22 @@
+# Saans | सांस — Air Quality Assistant for Winter Smog
+
+> Evidence-grounded air quality assistant turning raw PM2.5 and AQI data into specific, room-by-room protective decisions for families living through severe winter smog in Delhi-NCR. 100% free public health initiative.
+
+## Core Capabilities
+- **Solar Ventilation Windows**: Predicts the optimal 15-20 minute afternoon window (typically 1:00 PM – 3:00 PM) when ground heating breaks the nocturnal boundary layer temperature inversion, minimizing particle influx.
+- **Indoor Mass-Balance Simulation**: Deterministic single-zone physics engine calculating indoor PM2.5 from room volume, air exchange rate (ACH), purifier CADR, and indoor emissions.
+- **Pediatric & Adult Breath Budget**: Calculates personal minute ventilation volume (L/min) and inhaled PM2.5 particulate mass dose (µg) across activities.
+- **Clinical Safety Circuit Breaker**: Immediate triage and hospital red-flag detection for stridor, retractions, oxygen desaturation, and acute distress with nearest facility helplines.
+- **School & Society Alerts**: Playbooks for school closures, outdoor recess suspension, and community air cleaners under GRAP Stage IV protocols.
+
+## Key Facts & Science Base
+- **Cloth/Surgical Masks**: Cloth masks filter only 15-20% of PM2.5. Loose-fitting surgical masks leak 50-70%. Only certified N95/FFP2 respirators block 95%+ of particles.
+- **Steam Inhalation**: Inhaled soot resides in pulmonary alveoli; water vapor condenses in the throat and cannot remove alveolar particles. Hot steam risks airway scalding.
+- **Cost**: 100% Free, non-profit, zero ads, no affiliate commissions, zero paywalls.
+
+## Canonical URLs
+- Website: https://empty-partition-anchor-basket.trycloudflare.com/
+- Action Plan: https://empty-partition-anchor-basket.trycloudflare.com/#plan
+- Air Physics Model: https://empty-partition-anchor-basket.trycloudflare.com/#math
+- Frequently Asked Questions: https://empty-partition-anchor-basket.trycloudflare.com/#faq
+- Free Alert Scheduling: https://empty-partition-anchor-basket.trycloudflare.com/#schedule
