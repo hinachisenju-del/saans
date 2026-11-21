@@ -87,6 +87,19 @@ export const TodayScreen: React.FC<TodayScreenProps> = ({
             </a>
           </div>
         </div>
+
+        {/* Hero Visual Showcase Graphic (Visible Above the Fold) */}
+        <div className="mt-4 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-black/10">
+          <img
+            src="/hero-showcase.webp"
+            alt="Saans Clean Air Decision Framework and Hyperlocal Winter Smog Advisory Infographic"
+            width={900}
+            height={480}
+            className="w-full h-auto object-cover max-h-64 sm:max-h-80"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
       </section>
 
       {/* 2. Atmospheric Air Strip Card */}
