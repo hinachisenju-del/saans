@@ -2,7 +2,7 @@
 
 Real-time air quality tracking, personalized health guidance, and physics-based indoor modeling for Indian urban centers.
 
-Live Website Demo: https://4d154099b7ef3c.app.lhr.life/
+Live Website Demo: https://limitations-neutral-attempts-equal.trycloudflare.com/
 
 ## Verified Audit Achievements
 - SiteSpeakAI: **98 / 100** (Design: 100%, SEO: 100%, Content: 100%, AI Readiness: 100%, Performance: 90%) — [View Report](https://sitespeak.ai/tools/rate-my-website/dfba3fc2-5d25-482c-ba55-221221963869/share)
