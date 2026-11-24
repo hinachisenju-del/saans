@@ -21,46 +21,39 @@
 
 ## 1. Introduction
 
-Urban environments across Northern India and the Indo-Gangetic Plains (encompassing metropolises such as Delhi-NCR, Kanpur, Lucknow, and Patna) experience chronic and severe atmospheric degradation. During post-monsoon crop-residue burning and winter temperature inversion events, ambient fine particulate matter ($PM_{2.5}$) concentrations consistently surge past $250\text{ to }450\,\mu\text{g/m}^3$, exceeding the World Health Organization (WHO) annual guideline of $5\,\mu\text{g/m}^3$ by a factor of 25 to 50 times. Continuous Ambient Air Quality Monitoring Stations (CAAQMS) deployed by governmental agencies routinely broadcast numeric National Air Quality Index (NAQI) figures. However, existing public dissemination systems present a critical **Actionability Gap**: static metrics such as "AQI 380" communicate an abstract environmental statistic without conveying what concrete physical actions a citizen must immediately execute to mitigate severe physiological harm.
+Urban environments across Northern India and the Indo-Gangetic Plains (such as Delhi-NCR, Kanpur, and Lucknow) suffer from severe seasonal atmospheric degradation, where ambient fine particulate matter ($PM_{2.5}$) concentrations routinely surge past $250\text{ to }450\,\mu\text{g/m}^3$—exceeding World Health Organization (WHO) annual limits by 25 to 50 times. While Continuous Ambient Air Quality Monitoring Stations (CAAQMS) report numeric Air Quality Index (AQI) values, citizens face a critical **Actionability Gap**: static figures like "AQI 380" do not indicate whether children can safely play outside, which certified respirator is required, or what indoor safeguards are effective. 
 
-Furthermore, modern urban dwellers spend over 85% to 90% of their daily lifecycle indoors. This introduces a dangerous **Indoor Exposure Blindspot**, wherein individuals falsely assume their homes and offices remain immune from outdoor toxic plumes. In reality, uncontrolled building envelope infiltration, lack of mechanical air sealing, and internal particulate-generating activities (such as unventilated cooking and incense combustion) frequently result in indoor $PM_{2.5}$ levels that closely mirror or exceed hazardous outdoor atmospheres. Existing commercial tools treat exposure as passive and homogeneous, ignoring that true physiological exposure—the inhaled alveolar particulate dose—is heavily governed by dynamic human minute ventilation rates (breathing volume per minute), physical exertion, duration, and personal protective equipment (PPE) filtration efficiencies.
-
-To decisively resolve these systemic vulnerabilities, this project presents **Saans (साँस)**, a high-performance, privacy-first, hyperlocal air quality intelligence and sensitive-group health advisory system. Built on edge-native web standards, Saans transforms raw pollutant telemetry into personalized, life-saving clinical and engineering actions. The system integrates deterministic mass-balance indoor micro-environmental forecasting, activity-adjusted lung dose calculations, bilingual emergency triage for acute respiratory distress, and evidence-grade public health counter-measures.
+Furthermore, urban dwellers spend over 85% of their daily lifecycle indoors, harboring a dangerous **Indoor Exposure Blindspot** where building envelope infiltration and unventilated cooking soot elevate indoor hazards undetected. **Saans (साँस)** resolves this crisis as an edge-native, hyperlocal air intelligence and sensitive-group health advisory system that transforms environmental telemetry into personalized, life-saving clinical and engineering actions.
 
 ### 1.1 Field of the Project
-This project is situated in the specialized domain of **Environmental Informatics, Cyber-Physical Systems (CPS) Modeling, Applied Health Computing, and Distributed Edge Systems**. It integrates aerosol physics, mechanical HVAC fluid dynamics, epidemiological dose-response algorithms, and modern concurrent software engineering into a zero-latency, client-centric web architecture.
+This project lies at the intersection of **Environmental Informatics, Cyber-Physical Systems (CPS) Modeling, Applied Health Computing, and Distributed Edge Web Systems**.
 
-### 1.2 Specialized Domain Terminology
-- **Particulate Matter ($PM_{2.5}$ & $PM_{10}$)**: Airborne fine particulates with aerodynamic diameters $\le 2.5\,\mu\text{m}$ and $\le 10\,\mu\text{m}$, respectively. Due to its minute size, $PM_{2.5}$ bypasses upper nasal cilia, penetrates deeply into pulmonary alveoli, and translocates directly into the bloodstream, triggering systemic cardiovascular and pulmonary inflammation.
-- **National Air Quality Index (NAQI)**: The official Indian standardized environmental indicator established by the Central Pollution Control Board (CPCB), computing multi-pollutant hazard indices via piecewise linear interpolation across eight monitored pollutants ($PM_{2.5}$, $PM_{10}$, $NO_2$, $SO_2$, $CO$, $O_3$, $NH_3$, $Pb$).
-- **Simple Action Level (SAL) Tiers**: A streamlined, human-centered decision framework developed in Saans that maps complex multi-pollutant concentrations into 6 unambiguous, actionable operational tiers (Level 0: Clear to Level 5: Hazardous Emergency), featuring automated escalation for vulnerable individuals.
-- **Clean Air Delivery Rate (CADR)**: The standardized volumetric metric ($\text{m}^3/\text{h}$ or $\text{CFM}$) defining the volume of particulate-free air delivered by a mechanical HEPA filtration system per unit time, certified under ANSI/AHAM AC-1 testing protocols.
-- **Air Changes per Hour ($\text{ACH} / \lambda$)**: The fundamental metric expressing the rate at which the entire volume of air within an enclosed space is replaced by outdoor or clean filtered air per hour.
-- **Penetration Factor ($p$) & Deposition Rate ($k_{dep}$)**: The fraction of ambient outdoor particulate matter that penetrates through building envelope crevices ($0.65\text{ to }0.85$ in unsealed masonry structures), and the physical settling velocity of suspended particles onto room surfaces ($0.15\text{ to }0.30\,\text{h}^{-1}$).
-- **Minute Ventilation Rate ($V_E$)**: The total volume of ambient air inhaled and exhaled by an individual per minute ($\text{L/min}$), scaling physiologically from basal resting states ($6\text{--}8\,\text{L/min}$) to intense aerobic outdoor exertion ($30\text{--}45\,\text{L/min}$).
-- **Inhaled Alveolar Dose**: The physical mass of toxic particulate matter (measured in micrograms, $\mu\text{g}$) deposited within the tracheobronchial and alveolar trees of the human lung over a defined activity duration.
-- **Clinical Red-Flag Triage Engine**: A deterministic, bilingual natural language parser designed in Saans to identify emergency clinical distress cues (e.g., *"saans phool rahi"*, *"chhati me dard"*, *"blue fingernails"*, *"infant stridor"*) and immediately trigger emergency dispatch routing (112/102).
+### 1.2 Specialized Technical Terminology
+- **$PM_{2.5}$**: Fine airborne particles with aerodynamic diameter $\le 2.5\,\mu\text{m}$ that penetrate deep into pulmonary alveoli and translocate into systemic blood circulation.
+- **National Air Quality Index (NAQI)**: India's standardized environmental metric computing multi-pollutant hazard indices via piecewise linear sub-index interpolation.
+- **Simple Action Level (SAL) Tiers**: A human-centered framework developed in Saans mapping air quality into 6 operational tiers (Level 0 Clear to Level 5 Emergency) with automatic escalation for sensitive groups.
+- **Clean Air Delivery Rate (CADR) & Air Changes per Hour ($\text{ACH} / \lambda$)**: Standard volumetric filtration metric ($\text{m}^3/\text{h}$) and the physical rate of indoor room air replacement ($\text{h}^{-1}$).
+- **Inhaled Alveolar Dose**: Physical particulate mass ($\mu\text{g}$) deposited in pulmonary alveoli, scaled by minute ventilation rate ($V_E$, $\text{L/min}$) and mask filtration efficiency.
+- **Clinical Red-Flag Triage Engine**: A bilingual regex parser detecting acute distress (*"saans phoolna"*, *"chest pain"*, *"stridor"*) to immediately route users to emergency dispatch (112/102).
 
 ---
 
 ## 2. Project Objective
 
-The primary objective of the Saans project is to build and deploy an accessible, mathematically rigorous, and privacy-preserving air intelligence system that empowers citizens, particularly sensitive and vulnerable cohorts, to take immediate, quantifiable protective actions during hazardous air pollution crises.
+The primary objective of the Saans project is to engineer an accessible, mathematically rigorous, and privacy-preserving air intelligence system that empowers citizens, particularly sensitive and vulnerable cohorts, to take immediate, quantifiable protective actions during hazardous air pollution crises. The explicit, measurable objectives of the project are defined as follows:
 
-The explicit, measurable objectives of the project are defined as follows:
-
-1. **Hyperlocal Atmospheric Data Ingestion & NAQI Disaggregation**: Ingest, parse, and disaggregate real-time atmospheric pollutant concentrations ($PM_{2.5}$, $PM_{10}$, $NO_2$, $SO_2$, $CO$, $O_3$) from CAAQMS and satellite reanalysis feeds, converting complex multi-pollutant vectors into intuitive, color-coded Simple Action Levels (SAL 0 to 5) with automated sensitivity escalation for vulnerable personas.
+1. **Hyperlocal Atmospheric Data Ingestion & NAQI Disaggregation**: Ingest, parse, and disaggregate real-time atmospheric pollutant concentrations ($PM_{2.5}$, $PM_{10}$, $NO_2$, $SO_2$, $CO$, $O_3$) from CAAQMS feeds, converting multi-pollutant vectors into intuitive, color-coded Simple Action Levels (SAL 0 to 5) with automated sensitivity escalation for vulnerable personas.
 2. **Continuous Single-Room Mass-Balance Indoor Air Quality Modeling**: Formulate and execute a continuous, client-side single-room physical mass-balance differential model that accurately simulates indoor $PM_{2.5}$ concentrations based on outdoor ambient levels, room volume, building envelope air exchange rate ($\text{ACH}$), indoor generation sources (cooking, incense), and CADR-rated mechanical filtration.
-3. **Activity-Adjusted Inhaled Dose & Avoided Risk Quantification**: Implement a physiological inhaled dose quantification engine that calculates the cumulative particulate mass ($\mu\text{g}$) deposited into the user's alveolar tissue across activity modes (resting, desk work, walking, intense commuting), dynamically calculating the avoided particulate burden achieved by wearing certified N95 respirators.
+3. **Activity-Adjusted Inhaled Dose & Avoided Risk Quantification**: Implement a physiological inhaled dose quantification engine that calculates the cumulative particulate mass ($\mu\text{g}$) deposited into the user's alveolar tissue across activity modes (resting, walking, commuting), dynamically computing avoided particulate burdens achieved by wearing certified N95 respirators.
 4. **Vulnerable Persona-Specific Guidance & Bilingual Emergency Triage**: Develop tailored, clinically grounded protective protocols for high-risk user personas (pediatric, geriatric, pregnant, asthmatic) paired with a bilingual (Hindi and English) emergency safety triage engine capable of intercepting acute clinical distress and routing users to emergency tertiary medical care.
 5. **Ultra-Low Latency, Zero-Telemetry Edge Architecture**: Engineer a zero-server-dependency, offline-first Progressive Web Application (PWA) with sub-150ms client-side model computation, strictly adhering to the Digital Personal Data Protection (DPDP) Act 2023 through local-only geolocation and zero remote user tracking.
 
 ### 2.1 End-User Impact and Utility
-By operationalizing these objectives, Saans transforms abstract air quality monitoring into actionable personal defense:
+By operationalizing these objectives, Saans directly transforms abstract air quality monitoring into actionable personal defense:
 - **Parents of Young Children**: Receive pediatric-adjusted minute ventilation warnings and facial seal mask fit protocols.
 - **Chronic Respiratory Patients**: Gain predictive hourly clean-air window forecasts and immediate clinical red-flag triage.
 - **Daily Outdoor Commuters**: Calculate exact avoided lung burdens ($\mu\text{g}$ particulate saved) through route and mask selection.
-- **Budget-Conscious Households**: Receive practical clean-room containment, window sealing, and filter optimization strategies without needing expensive commercial air purifiers.
+- **Budget-Conscious Households**: Receive practical clean-room containment, window sealing, and filter optimization strategies without requiring expensive proprietary hardware.
 
 ---
 
@@ -92,16 +85,25 @@ Saans is fully aligned with all national and international regulatory statutes. 
 
 ---
 
-## 4. Methodology / Planning of Work
+## 4. Methodology/ Planning of work
 
-The project follows a rigorous, spec-driven engineering methodology combining physical system modeling with modern reactive frontend architecture. The methodology encompasses four distinct operational layers:
+The development of Saans follows a spec-driven engineering methodology structured to systematically achieve each project objective. The methodology combines physical aerosol mechanics, epidemiological dose estimation, deterministic clinical triage, and high-performance reactive web engineering into an end-to-end operational pipeline.
 
-1. **Data Ingestion & Sanitization Layer**: Fetches real-time ambient particulate concentrations, atmospheric pressure, temperature, and humidity from CAAQMS stations and validated fallback environmental feeds. Includes an input validation pipeline enforcing numeric bounds.
-2. **Core Physics & Mathematical Modeling Layer**: Encapsulates deterministic physics and epidemiology algorithms: the CPCB NAQI breakpoint interpolation, the Simple Action Level (SAL) categorization engine, the differential mass-balance indoor micro-environment model, and the alveolar inhaled dose counter.
-3. **Presentation & User Experience Layer**: Built with React 19 concurrent component primitives and Tailwind CSS. Employs accessible, highly responsive visual cards, interactive slider controls for room dimensions, real-time hourly graphs, and immediate bilingual emergency modal alerts.
-4. **Privacy & Sandbox Execution Layer**: Enforces local-first data isolation, Content Security Policy (CSP) headers, and strict DPDP Act 2023 compliance, storing user preferences solely in local browser sandbox storage.
+### 4.1 Phased Engineering Methodology & Project Development Steps
+To achieve the project objectives during development, the engineering lifecycle was executed in seven sequential steps:
 
-### 4.1 System Architecture Diagram
+1. **Step 1: Environmental Requirements Analysis & Data Ingestion Pipeline**: Analyzed CAAQMS telemetry from CPCB and OpenAQ endpoints. Defined JSON schemas, sanitization boundaries, and range constraints for $PM_{2.5}$, $PM_{10}$, $NO_2$, $SO_2$, $CO$, and $O_3$ to eliminate erratic station anomalies.
+2. **Step 2: Single-Room Mass-Balance Formulation**: Derived and implemented the physical differential conservation-of-mass model governing indoor aerosol dynamics based on outdoor concentration, room volume, air exchange rate ($\text{ACH}$), indoor generation sources, and mechanical CADR filtration.
+3. **Step 3: Inhaled Alveolar Dose & Avoided Burden Modeling**: Programmed the alveolar particulate inhalation equation scaling by minute ventilation rates ($V_E$) across resting, walking, and intense commuting activities, quantifying exact avoided lung burdens achieved with certified N95 respirators.
+4. **Step 4: Simple Action Level (SAL) Engine & Sensitive Cohort Escalation**: Implemented the 6-tier Simple Action Level (SAL) classification matrix based on CPCB NAQI breakpoints, incorporating automatic 1-tier risk escalation whenever sensitive or vulnerable household members are registered.
+5. **Step 5: Bilingual Clinical Red-Flag Safety Engine**: Constructed a bilingual (English and transliterated Hindi) regex clinical matching engine to detect emergency respiratory distress keywords (*"saans phoolna"*, *"chest pain"*, *"stridor"*) and provide immediate 112/102 emergency routing.
+6. **Step 6: Reactive UI Implementation & DPDP Act 2023 Sandboxing**: Developed the frontend interface using React 19 concurrent features, Vite 8 bundling, and Tailwind CSS. Implemented the offline-first Service Worker caching pipeline and strict DPDP Act 2023 local-only data sandbox.
+7. **Step 7: Automated Verification, Accessibility Auditing & Edge Deployment**: Built a 43-unit-test suite in Vitest validating all mathematical engines with 100% pass rates, followed by independent AI web audits (SiteSpeakAI 98/100, RateMySite 91/100 Grade A, DotPlus SEO 95%).
+
+### 4.2 System Architecture Diagram
+The end-to-end system architecture is partitioned into five distinct operational layers, ensuring complete decoupling between external data ingestion, deterministic physical modeling, safety enforcement, and presentation:
+
+![Figure 1: Saans End-to-End System Architecture Diagram](docs/diagrams/architecture_diagram.png)
 
 ```
 +-----------------------------------------------------------------------------------+
@@ -149,7 +151,32 @@ The project follows a rigorous, spec-driven engineering methodology combining ph
 +-----------------------------------------------------------------------------------+
 ```
 
-### 4.2 Mathematical Formulations and Governing Equations
+*Figure 1: Saans End-to-End System Architecture Diagram.*
+
+### 4.3 Data Flow Diagram (DFD Level 0 & Level 1)
+The flow of information across external entities, computational processes, and data stores is formalized through Level 0 (Context Diagram) and Level 1 (Decomposed Functional Processes) Data Flow Diagrams:
+
+![Figure 2: Data Flow Diagram (DFD Level 0 Context & Level 1 Functional Processes)](docs/diagrams/data_flow_diagram.png)
+
+```
+[DFD Level 0 Context]:
+User / Citizen <--(Profile & Symptom Query / Action Level & Guidance)--> [ 0.0 Saans System ]
+CAAQMS / CPCB  --(Raw Pollutant Feeds)---------------------------------> [ 0.0 Saans System ]
+Emergency 112  <--(Red-Flag Distress Trigger)---------------------------- [ 0.0 Saans System ]
+
+[DFD Level 1 Decomposed Processes]:
+Raw Feeds ---> ( 1.0 Ingestion & Validate ) ---> ( 2.0 Physical Modeling ) ---> ( 3.0 SAL Classification )
+                                                          |                                |
+                                                          v                                v
+                                                 ( 4.0 Safety Triage ) <------> ( 5.0 Adaptive UI Render )
+                                                          |                                |
+                                                          v                                v
+                                             [ D1: LocalStorage Sandbox ]      [ D2: Ephemeral 5-min Cache ]
+```
+
+*Figure 2: Data Flow Diagram (DFD Level 0 Context & Level 1 Functional Processes).*
+
+### 4.4 Mathematical Formulations and Governing Equations
 
 #### 1. Single-Room Steady-State Mass-Balance Indoor Air Quality Model
 To forecast indoor particulate concentrations without requiring costly IoT hardware, Saans implements the continuous conservation-of-mass differential equation formulated by Nazaroff (2004) and ASHRAE Standard 241:
@@ -161,10 +188,10 @@ Where:
 - $C_{out}$: Ambient outdoor $PM_{2.5}$ concentration from CAAQMS ($\mu\text{g/m}^3$).
 - $p$: Building envelope penetration factor (dimensionless, $0.65\text{ to }0.85$ for typical unsealed masonry).
 - $\lambda$: Air exchange rate (Air Changes per Hour, $\text{h}^{-1}$; $0.28$ for sealed room, $4.2$ for open windows).
-- $S$: Indoor generation rate ($\mu\text{g/h}$; e.g., unventilated cooking = $16,000\,\mu\text{g/h}$, incense = $3,500\,\mu\text{g/h}$).
+- $S$: Indoor generation rate ($\mu\text{g/h}$; e.g., cooking = $16,000\,\mu\text{g/h}$, incense = $3,500\,\mu\text{g/h}$).
 - $V$: Room volume ($\text{m}^3$; $\text{length} \times \text{width} \times \text{height}$).
 - $k_{dep}$: Natural particulate surface deposition rate ($\text{h}^{-1}$, empirically $0.21\,\text{h}^{-1}$ for fine particles).
-- $\text{CADR}_{eff}$: Effective Clean Air Delivery Rate of mechanical filtration ($\text{m}^3/\text{h}$), derated by filter age and fan speed.
+- $\text{CADR}_{eff}$: Effective Clean Air Delivery Rate of mechanical filtration ($\text{m}^3/\text{h}$).
 
 #### 2. Physiological Inhaled Particulate Alveolar Dose Equation
 To quantify personal physiological burden rather than abstract atmospheric concentration, Saans calculates the total mass of toxic particulate matter deposited in the respiratory tract:
@@ -173,12 +200,12 @@ $$\text{Inhaled Dose }(\mu\text{g}) = C_{exp} \cdot V_E \cdot t \cdot (1 - \eta_
 
 Where:
 - $C_{exp}$: Ambient particulate concentration in the exposure micro-environment ($\mu\text{g/m}^3$).
-- $V_E$: Minute ventilation rate ($\text{m}^3/\text{h}$, derived from physiological activity: resting = $0.45\,\text{m}^3/\text{h}$, walking = $1.2\,\text{m}^3/\text{h}$, heavy cycling/running = $2.4\,\text{m}^3/\text{h}$).
+- $V_E$: Minute ventilation rate ($\text{m}^3/\text{h}$: resting = $0.45\,\text{m}^3/\text{h}$, walking = $1.2\,\text{m}^3/\text{h}$, commuting = $2.4\,\text{m}^3/\text{h}$).
 - $t$: Duration of physical activity (hours).
 - $\eta_{mask}$: Laboratory filtration efficiency of the face covering (N95 = $0.95$, Surgical = $0.60$, Cloth = $0.25$, None = $0.00$).
 - $f_{fit}$: Mask fit coefficient accounting for facial seal leakage (tight fit = $1.0$, loose/beard = $0.65$).
 
-By comparing the dose under $\eta_{mask} = 0$ against certified N95 usage, Saans computes the **Avoided Particulate Lung Burden** ($\Delta\text{Dose}$ in $\mu\text{g}$ and $\%$ reduction), delivering an immediate, positive behavioral incentive to the citizen.
+By comparing the dose under $\eta_{mask} = 0$ against certified N95 usage, Saans computes the **Avoided Particulate Lung Burden** ($\Delta\text{Dose}$ in $\mu\text{g}$ and $\%$ reduction).
 
 #### 3. CPCB NAQI Sub-Index Linear Interpolation
 For pollutant concentration $C_p$ falling between lower and upper concentration breakpoints $BP_{lo}$ and $BP_{hi}$, the sub-index $I_p$ is computed via:
@@ -187,7 +214,7 @@ $$I_p = \left[ \frac{I_{hi} - I_{lo}}{BP_{hi} - BP_{lo}} \right] \cdot (C_p - BP
 
 ---
 
-## 5. Tools / Technology Used
+## 5. Tools/Technology Used:
 
 ### 5.1 Minimum Hardware Requirements
 The hardware specifications required for the development, compilation, testing, and deployment of the Saans platform are outlined below:
@@ -220,7 +247,7 @@ The software architecture, development toolchains, testing frameworks, and produ
 
 ---
 
-## 6. References: [IEEE format]
+## 6. References: [IEEE format]:
 
 - [1] Central Pollution Control Board (CPCB), "National Air Quality Index (NAQI) Report," Ministry of Environment, Forest and Climate Change, Government of India, New Delhi, India, Final Tech. Rep., Oct. 2014.
 - [2] World Health Organization, "WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide," World Health Organization, Geneva, Switzerland, Tech. Rep. ISBN 978-92-4-003422-8, Sep. 2021.
@@ -232,18 +259,3 @@ The software architecture, development toolchains, testing frameworks, and produ
 - [8] S. Batterman, "Review and extension of the clean air delivery rate (CADR) metric," *Building and Environment*, vol. 120, pp. 349–358, Aug. 2017, doi: 10.1016/j.buildenv.2017.06.012.
 - [9] A. Seaton, W. MacNee, K. Donaldson, and D. Godden, "Particulate air pollution and acute health effects," *The Lancet*, vol. 345, no. 8943, pp. 176–178, Jan. 1995, doi: 10.1016/S0140-6736(95)90173-6.
 - [10] Central Pollution Control Board (CPCB), "Guidelines for Continuous Ambient Air Quality Monitoring Stations (CAAQMS)," Ministry of Environment, Forest and Climate Change, Govt. of India, Tech. Guidelines Doc. CAAQMS-2020-01, 2020.
-
----
-
-## 7. Appendix: Verification, Testing & Audit Scorecard
-
-To satisfy the most rigorous engineering standards of software reliability, performance, security, and accessibility, the Saans project underwent exhaustive automated testing and independent AI-powered auditing:
-
-| Audit Metric / Test Suite | Target / Passing Threshold | Verified Score / Current Status |
-| :--- | :--- | :--- |
-| **Automated Unit Test Suite (Vitest v5.1.1)** | 100% Passing across all mathematical engines | **43 / 43 Unit Tests Passing** (100% Pass Rate across 7 suites) |
-| **SiteSpeakAI Overall Evaluation Score** | Score > 90 / 100 | **98 / 100** (Design: 100, SEO: 100, Content: 100, AI: 100, Perf: 90) |
-| **RateMySite.io Independent Web Audit** | Score > 85 / 100 | **91 / 100** (Grade A Overall Rating) |
-| **DotPlus Search Engine Optimization (SEO)** | Score > 90% (Grade A) | **95%** (Grade A+, 63 passed checks, 0 high/medium issues) |
-| **WCAG 2.1 AA Accessibility & Color Contrast** | Score > 90 / 100 | **96 / 100** (High contrast, color-blind accessible, screen-reader ready) |
-| **DPDP Act 2023 Data Privacy Audit** | Zero external telemetry or user tracking | **100% Compliant** (Zero remote cookies, local storage sandbox only) |
